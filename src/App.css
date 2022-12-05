@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: #282d35;
+}
+/* NAVBAR SECTION */
+.Navbar {
+  background-color: #21222a;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.Navbar > img {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+.Navbar > h3 {
+  color: #61dafb;
+  font-size: xx-large;
+  margin-left: 10px;
+}
+.Navbar > h4 {
+  right: 25px;
+  position: absolute;
+  color: rgb(238, 238, 238);
+  font-size: x-large;
+}
+
+/* MAIN SECTION */
+.Main {
+  background-color: #282d35;
+  background-image: url(../src/images/gray-react-logo.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+.H1 {
+  /* margin-left: 20px;
+  margin-top: 30px; */
+  text-align: center;
+  margin-top: 35px;
+  font-size: 39px;
+  color: rgb(238, 238, 238);
+  letter-spacing: -0.05rem;
+}
+.Main > ul {
+  margin-top: 45px;
+  margin-left: 20px;
+  font-size: 25px;
+  color: rgb(238, 238, 238);
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li {
+  padding-block: 12px;
+  font-weight: 300;
+}
+
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #61dafb; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.LightNavbar{
+  background-color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #21222a;
+}
+.LightMain{
+  background-color: white;
+  background-image: url(../src/images/gray-react-logo.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  color: #282d35;
+}
+
+
